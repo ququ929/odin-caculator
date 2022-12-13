@@ -1,3 +1,4 @@
+// basic arithmetic 
 function add(a, b) {
     return a + b;
 }
@@ -30,3 +31,23 @@ function operate (operator, number1, number2) {
             return divide(number1,number2);
     }
 }
+
+// display
+let displayNumber = 0;
+
+const displayNumberElement = document.querySelector(".display-screen");
+
+displayNumberElement.textContent = displayNumber;
+
+// link number button with display screen
+const calculatorButtons = document.querySelectorAll("button");
+
+calculatorButtons.forEach(function(button) {
+    button.addEventListener("click", saveNumber);
+});
+
+function saveNumber() {
+    displayNumber = this.innerHTML;
+    displayNumberElement.textContent = displayNumber;
+}
+
