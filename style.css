@@ -44,3 +44,13 @@
 .button0 {
     flex: 2.4 1 auto;
 }
+
+.display-screen {
+    text-align: end;
+    padding-top: 60px;
+    font-size: large;
+}
+
+button {
+    background-color: rgb(78, 77, 77);
+}
